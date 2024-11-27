@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <style>
+        header {
+            background-color: seashell;
+            padding: 15px;
+            border-radius: 15px;
+            text-align: center;
+            margin: 20px;
+        }
+        a {
+            color: slategray;
+            margin-left: 25px;
+            text-decoration: none;
+        }
+        a:hover {
+            transition: 550ms;
+            color: black;
+        }
+        .contact {
+            color: cornflowerblue;
+        }
+        .form-block {
+            background-color: slategray;
+            border: 1px solid black;
+            border-radius: 15px;
+            margin: 0 auto;
+            padding: 20px;
+            width: 350px;
+        }
+        form label legend{
+            color: white;
+            margin-bottom: 5.5px;
+        }
+        form label input {
+            font-family: 'Courier New', Courier, monospace;
+            color: darkslategrey;
+            border: 1px solid seashell;
+            border-radius: 5px;
+        }
+        form label input:focus {
+            outline: none !important;
+        }
+        form .submit_button {
+            background-color: lightgray;
+            border: 1px solid white;
+            border-radius: 5px;
+            font-family: 'Courier New', Courier, monospace;
+            margin-top: 5px;
+            padding: 5px;
+            width: 350px;
+        }
+        form .submit_button:hover {
+            cursor: pointer;
+            transition: 550ms;
+            background-color: beige;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="../index.html" class="home">Home</a>
+            <a href="about.html" class="about">About</a>
+            <a href="contact.html" class="contact">Contact</a>
+        </nav>
+    </header>
+    <div class="form-block">
+        <form action="#">
+            <label for="name">
+                <legend>Name:</legend>
+                <input type="text" placeholder="Your name">
+            </label>
+            <br><br>
+            <label for="email">
+                <legend>Email:</legend>
+                <input type="email" placeholder="Your email">
+            </label>
+            <br><br>
+            <label for="message">
+                <legend>Message:</legend>
+                <textarea name="message_content" id="msg" placeholder="Message content"></textarea>
+            </label>
+            <br>
+            <input type="submit" class="submit_button">
+        </form>
+    </div>
+</body>
+</html>

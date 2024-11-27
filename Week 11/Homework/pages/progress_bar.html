@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            text-align: center;
+        }
+        .progress-block {
+            background-color: wheat;
+            padding: 15px;
+            border-radius: 15px;
+            text-align: center;
+        }
+        .back_button {
+            background-color: seashell;
+            border: 1px solid silver;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 15px;
+            width: 360px;
+            height: 35px;
+        }
+    </style>
+</head>
+<body>
+    <div class="progress-block">
+        <h1>File Upload Progress</h1>
+
+        <label for="file">Uploading File:</label>
+        <progress id="file" value="50" max="100"> 50% </progress>
+        <p>50% Compleated</p>
+    </div>
+    <button class="back_button"
+    onclick="window.location.pathname = 'Homework/index.html'">
+        Back to Home
+    </button>
+</body>
+</html>

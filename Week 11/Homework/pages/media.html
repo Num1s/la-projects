@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Embeds Page</title>
+    <style>
+        body {
+            text-align: center;
+        }
+        .media-block {
+            background-color: antiquewhite;
+            border-radius: 35px;
+            margin: 0 auto;
+            text-align: center;
+            width: 650px;
+            padding: 15px;
+        }
+        .back_button {
+            background-color: seashell;
+            border: 1px solid silver;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 15px;
+            width: 360px;
+            height: 35px;
+        }
+    </style>
+</head>
+<body>
+    <div class="media-block">
+        <h1>Media and Document Page</h1>
+
+        <h2>Watch this YouTube Video</h2>
+        <iframe width="560" height="315" 
+                src="https://www.youtube.com/embed/dQw4w9WgXcQ" 
+                title="YouTube video player" 
+                frameborder="0" 
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                allowfullscreen>
+        </iframe>
+
+        <h2>Listen to this Audio File</h2>
+        <audio controls>
+            <source src="../details/Wham! - Last Christmas (из фильма «Рождество на двоих»).mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+
+        <h2>Download this PDF</h2>
+        <p><a href="https://z-library.sk/dl/17430667/8c59df" download>Click here to download the PDF File (HTML Learning)</a></p>
+    </div>
+    <button class="back_button"
+    onclick="window.location.pathname = 'Homework/index.html'">
+        Back to Home
+    </button>
+</body>
+</html>

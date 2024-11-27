@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <title>Exercise 19</title>
+    <style>
+        a {
+            text-decoration: none;
+        }
+        div {
+            margin: 30px auto;
+            text-align: center;
+        }
+        .btn-group a {
+            padding-left: 20px;
+            padding-right: 20px;
+        }
+        form {
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="card text-bg-primary mb-3 center" style="max-width: 18rem;">
+            <div class="card-header">Solution</div>
+            <div class="card-body">
+                <form action="/submit" method="post">
+                    <label for="subscribe">
+                      <input type="checkbox" id="subscribe" name="subscribe" value="yes">
+                      Subscribe to our newsletter
+                    </label>
+                    <br><br>
+                  
+                    <p>Select your membership type:</p>
+                    <label for="basic">
+                      <input type="radio" id="basic" name="membership" value="basic">
+                      Basic
+                    </label>
+                    <br>
+                    <label for="premium">
+                      <input type="radio" id="premium" name="membership" value="premium">
+                      Premium
+                    </label>
+                    <br>
+                    <label for="vip">
+                      <input type="radio" id="vip" name="membership" value="vip">
+                      VIP
+                    </label>
+                    <br><br>
+                  
+                    <button type="submit">Submit</button>
+                  </form>
+                  
+                <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quam nam, fugit nesciunt doloremque alias dolor quae modi. Dolore fugiat quisquam sunt in! Commodi, distinctio aspernatur? Officiis aperiam atque ducimus consequatur!</p>
+            </div>
+        </div>
+        <div class="btn-group" role="group" aria-label="Basic example">
+            <a href="exercise_18.html" class="btn btn-primary">Exercise 18</a>
+            <a href="../index.html" class="btn btn-primary"> Home</a>
+            <a href="exercise_20.html" class="btn btn-primary">Exercise 20</a>
+        </div>
+    </div>
+</body>
+</html>

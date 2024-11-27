@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Semantic Page</title>
+    <style>
+        body {
+            text-align: center;
+        }
+        header nav{
+            background-color: saddlebrown;
+            border-radius: 15px;
+            color: white;
+            display: flex;
+            justify-content: space-around;
+        }
+        header nav a {
+            padding: 15px;
+            color: white;
+            text-decoration: none;
+        }
+        .main-block {
+            background-color: wheat;
+            color: black;
+            font-size: 25px;
+            font-style: oblique;
+            text-align: center;
+            padding: 5px;
+            margin: 5px;
+            border-radius: 15px;
+        }
+        footer {
+            margin-top: 450px;
+            text-align: center;
+        }
+        .back_button {
+            background-color: seashell;
+            border: 1px solid silver;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 15px;
+            width: 360px;
+            height: 35px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <p>Links</p>
+            <a href="#">Instagram</a>
+            <a href="#">Youtube</a>
+            <a href="#">Telegram</a>
+        </nav>
+    </header>
+    <section class="main-block">
+        <article class="main_info">
+            <p>Company name: Bisquit</p>
+            <p>Created At: 22.11.24</p>
+            <p>Content: Business</p>
+        </article>
+    </section>
+    <button class="back_button"
+    onclick="window.location.pathname = 'Homework/index.html'">
+        Back to Home
+    </button>
+    <footer>
+        <p>@2024 All Rights Reserved.</p>
+    </footer>
+</body> 
+</html>

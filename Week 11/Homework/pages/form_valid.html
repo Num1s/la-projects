@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Validation</title>
+    <style>
+        body {
+            text-align: center;
+        }
+        .form-block {
+            font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            background-color: seashell;
+            border-radius: 15px;
+            margin: 0 auto;
+            width: 400px;
+        }
+        .form-block p {
+            padding-top: 15px;
+            margin-left: 15px;
+            font-size: 30px;
+        }
+        .form-block button {
+            background-color: #4caf50;
+            border-radius: 4px;
+            border: none;
+            cursor: pointer;
+            color: white;
+            margin-left: 15px;
+            margin-top: 15px;
+            margin-bottom: 25px;
+            width: 360px;
+            height: 35px;
+        }
+        .form-block legend {
+            font-size: 18px;
+            margin-bottom: 10px;
+        }
+        .form-block label {
+            display: block;
+            margin-left: 15px;
+        }
+        .form-block label input {
+            width: 350px;
+            height: 24px;
+            padding: 5px;
+            border-radius: 5px;
+            border: 1px solid silver;
+        }
+        .form-block label input:focus {
+            outline: 1.5px solid orange;
+        }
+        .form-block label select {
+            width: 360px;
+            height: 35px;
+            color: slategray;
+            border-radius: 5px;
+            border: 1px solid silver;
+        }
+        .back_button {
+            background-color: seashell;
+            border: 1px solid silver;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 15px;
+            width: 360px;
+            height: 35px;
+        }
+    </style>
+</head>
+<body>
+    <div class="form-block">
+        <form action="/#">
+            <p>Event Registration Form</p>
+            <label for="full_name">
+                <legend>Full Name:</legend>
+                <input type="text" placeholder="Enter your full name">
+            </label>
+            <br><br>
+            <label for="email_address">
+                <legend>Email Address:</legend>
+                <input type="email" placeholder="Enter your email address">
+            </label>
+            <br><br>
+            <label for="password">
+                <legend>Password:</legend>
+                <input type="password" placeholder="Enter your password">
+            </label>
+            <br><br>
+            <label for="event_date">
+                <legend>Event Date</legend>
+                <input type="date">
+            </label>
+            <br><br>
+            <label for="">
+                <legend>Event Type</legend>
+                <select name="event_type" id="event_type">
+                    <option value="placeholder" selected disabled hidden>Select an event type</option>
+                    <option value="type_1">Test Type_1</option>
+                    <option value="type_2">Test Type_2</option>
+                    <option value="type_3">Test Type_3</option>
+                    <option value="type_4">Test Type_4</option>
+                </select>
+            </label>
+
+            <button type="submit">Register</button>
+        </form>
+    </div>
+    <button class="back_button"
+    onclick="window.location.pathname = 'Homework/index.html'">
+        Back to Home
+    </button>
+</body>
+</html>
